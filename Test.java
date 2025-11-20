@@ -1,3 +1,4 @@
+import java.util.Scanner;
 
 /**
  * Write a description of class Test here.
@@ -7,27 +8,16 @@
  */
 public class Test
 {
-    // instance variables - replace the example below with your own
-    private int x;
-
-    /**
-     * Constructor for objects of class Test
-     */
-    public Test()
+ public static void main(String[]arg)
     {
-        // initialise instance variables
-        x = 0;
-    }
-
-    /**
-     * An example of a method - replace this comment with your own
-     *
-     * @param  y  a sample parameter for a method
-     * @return    the sum of x and y
-     */
-    public int sampleMethod(int y)
-    {
-        // put your code here
-        return x + y;
+        Scanner ot = new Scanner(System.in);
+        String Pass=null;
+        String Fail=null;
+        System.out.println("Entar grade");
+        float Grade = ot.nextFloat();
+        
+        String f=(Grade>40)?"Pass":"Fail";
+        System.out.println(f);
+        
     }
 }
